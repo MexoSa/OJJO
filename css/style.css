@@ -51,7 +51,6 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   gap: 15px;
-  padding: 0 20px;
 }
 
 .title__text {
@@ -93,6 +92,7 @@ a {
 
 .catalog-page {
   padding: 100px 30px;
+  padding-top: 0;
   margin: 0 auto;
 }
 
@@ -494,6 +494,10 @@ a {
   background-size: cover;
 }
 
+nav {
+  max-width: 1150px;
+}
+
 .poster {
   background-color: #333333;
   color: white;
@@ -502,7 +506,7 @@ a {
 
 @media (max-width: 950px) {
   .poster {
-    padding: 20px 0 20px;
+    padding: 20px 0 50px;
   }
 }
 
@@ -517,7 +521,7 @@ a {
 
 @media (max-width: 746px) {
   .poster nav + h2 {
-    margin-top: 340px;
+    margin-top: 300px;
   }
 }
 
@@ -732,6 +736,7 @@ a {
 }
 
 .tabs {
+  overflow: hidden;
   text-align: center;
 }
 
@@ -879,7 +884,7 @@ a {
   }
 }
 
-@media (max-width: 746px) {
+@media (max-width: 750px) {
   .tabs__item {
     min-width: 159px;
   }

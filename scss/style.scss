@@ -20,18 +20,22 @@
    background-size: cover;
 }
 
+nav {
+   max-width: $max-content-width;
+}
+
 .poster {
    background-color: #333333;
    color: white;
    padding: 20px 20px 20px;
    @media (max-width: 950px) {
-      padding: 20px 0 20px;
+      padding: 20px 0 50px;
    }
    nav {
       + h2 {
          margin-top: 540px;
          @media (max-width: 746px) {
-            margin-top: 340px;
+            margin-top: 300px;
          }
       }
       margin: 0 auto;
@@ -201,6 +205,7 @@
 }
 
 .tabs {
+   overflow: hidden;
    text-align: center;
    input[type="radio"] {
       display: none;
@@ -321,7 +326,7 @@
    }
 }
 
-@media (max-width: 746px) {
+@media (max-width: 750px) {
    .tabs__item {
       min-width: 159px;
    }
