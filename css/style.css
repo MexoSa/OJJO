@@ -501,13 +501,7 @@ nav {
 .poster {
   background-color: #333333;
   color: white;
-  padding: 20px 20px 20px;
-}
-
-@media (max-width: 950px) {
-  .poster {
-    padding: 20px 0 50px;
-  }
+  padding: 20px;
 }
 
 .poster nav {
@@ -568,7 +562,7 @@ nav {
   text-align: center;
 }
 
-@media (max-width: 746px) {
+@media (max-width: 950px) {
   .poster hr {
     display: none;
   }
@@ -649,7 +643,7 @@ nav {
     left: -100%;
     top: 0;
     overflow: auto;
-    padding: 120px 0 0 30px;
+    padding: 120px 0 0 50px;
     font-size: 30px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -683,9 +677,9 @@ nav {
   margin: 50px 0 80px;
 }
 
-@media (max-width: 746px) {
+@media (max-width: 950px) {
   .poster__button {
-    margin: 50px 0 0;
+    margin: 50px 0;
   }
 }
 
@@ -717,7 +711,7 @@ nav {
           justify-content: center;
 }
 
-@media (max-width: 746px) {
+@media (max-width: 950px) {
   .poster__brends-row {
     display: none;
   }
