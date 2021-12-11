@@ -1,0 +1,139 @@
+.breadcrumb {
+   text-align: center;
+   margin: 50px 0;
+   li,
+   a {
+      display: inline;
+   }
+   a {
+      border-bottom: 1px solid #d6d6d6;
+      margin-bottom: 10px;
+   }
+   li + li:before {
+      padding: 5px;
+      content: "/\00a0";
+   }
+}
+
+.about-our-shop__title {
+   font-weight: bold;
+   font-size: 30px;
+   margin-bottom: 30px;
+   text-align: center;
+}
+
+.more-good {
+   &__title {
+      margin-bottom: 100px;
+      ~ .catalog-page__cards-wrapper {
+         margin-bottom: 100px;
+      }
+   }
+}
+
+.product-wrapper {
+   padding: 0 30px 100px;
+   > .wrapper-content-width {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+
+   &__photos {
+      display: grid;
+      gap: 30px;
+      grid-template: minmax(235px, 1fr) 120px / repeat(3, minmax(80px, 160px));
+      @media (max-width: 600px) {
+         grid-template-rows: minmax(235px, 1fr) auto;
+      }
+      :first-child {
+         grid-area: 1 / span 3;
+         width: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__about {
+      border: 8px double #d6d6d6;
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      @media (max-width: 530px) {
+         padding: 30px 10px;
+      }
+   }
+   &__title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-align: center;
+   }
+
+   &__tags {
+      color: #979797;
+      display: flex;
+
+      gap: 30px;
+      flex-wrap: wrap;
+      @media (max-width: 530px) {
+         justify-content: center;
+      }
+   }
+
+   &__tag {
+      display: flex;
+      gap: 15px;
+   }
+
+   &__hr {
+      height: 1px;
+      background-color: #d6d6d6;
+      max-width: 460px;
+   }
+
+   &__about-text {
+      font-size: 14px;
+      line-height: 150%;
+      max-width: 460px;
+   }
+
+   &__about-price {
+      font-weight: 600;
+      font-size: 24px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+   }
+
+   &__about-row-button {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+   }
+
+   &__button-buy {
+      @include botton(
+         $color: white,
+         $bgc: black,
+         $padding: 10px 20px,
+         $fsz: 18px,
+         $color-hover: white,
+         $bgc-hover: rgb(175, 175, 175)
+      );
+   }
+
+   &__button-add-to-bag {
+      @include botton(
+         $color: black,
+         $bgc: inherit,
+         $padding: 10px 20px,
+         $fsz: 18px,
+         $color-hover: white,
+         $bgc-hover: black,
+         $border: 1px solid #333333
+      );
+   }
+}

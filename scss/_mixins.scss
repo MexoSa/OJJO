@@ -1,0 +1,24 @@
+@mixin botton(
+   $padding,
+   $color,
+   $bgc: inherit,
+   $border: 0px solid transparent,
+   $fsz: inherit,
+   $color-hover: inherit,
+   $bgc-hover: inherit,
+   $border-hover: $border
+) {
+   padding: $padding;
+   color: $color;
+   background-color: $bgc;
+   border: $border;
+   font-size: $fsz;
+   cursor: pointer;
+   white-space: nowrap;
+   transition: color, background-color 0.8s;
+   &:hover {
+      color: $color-hover;
+      background-color: $bgc-hover;
+      border: $border-hover;
+   }
+}
